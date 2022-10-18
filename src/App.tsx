@@ -5,6 +5,7 @@ import axios from "axios";
 import List from "./components/List";
 import { UserItem } from "./components/UserItem";
 import { TodoItem } from "./components/TodoItem";
+import { EventsExample } from "./components/EventsExample";
 
 export const App = () => {
     const [users, setUsers] = useState<IUser[]>([])
@@ -35,6 +36,7 @@ export const App = () => {
 
     return (
         <div>
+            <EventsExample/>
             <Card
                 height='200px'
                 width='200px'
